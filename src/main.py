@@ -6,7 +6,7 @@ def main():
     memory = Memory()
     company = input("Enter company name: ")
     tasks = plan(company)
-    result = execute(tasks, company, memory)
+    result = execute(tasks, company)
     memory.save(company, result)
     print("\n--- ESG RISK REPORT ---\n")
     print(result["analysis"])
